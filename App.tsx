@@ -1,12 +1,21 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text } from "react-native";
+import React from "react";
+import styled from "styled-components/native";
+import { StatusBar } from "expo-status-bar";
+import RootNavigation from "./src/screens/navigation/RootNavigation";
 
 const App = () => {
+  
   return (
-    <View className="bg-orange-500 flex-1">
-      <Text>App</Text>
-    </View>
-  )
-}
+    <Container>
+      <StatusBar style="auto" />
+      <RootNavigation />
+    </Container>
+  );
+};
 
-export default App
+export default App;
+
+const Container = styled(View)`
+  flex: 1;
+`;

@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const HomeNavigation = () => {
+const SearchNavigation = () => {
   return (
     <View>
-      <Text>HomeNavigation</Text>
+      <Text>SearchNavigation</Text>
     </View>
   )
 }
 
-export default HomeNavigation
+export default SearchNavigation
